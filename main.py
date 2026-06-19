@@ -498,6 +498,103 @@
 #
 # print(returs(1, 2))
 
+#                             15 - misol
+#
+# def integer_dec(func):
+#     def wrapper(a):
+#         natija =  isinstance(a, int)
+#         if natija:
+#             return func(a)
+#         else:
+#             return "Faqat raqam kiriting"
+#     return wrapper
+#
+#
+#
+#
+# def ret(a):
+#     return a
+# print(ret(1))
+
+#                              16 - misol
+
+# def is_manf_dec(func):
+#     def wrappper(a):
+#         if a > 0 :
+#             return func(a)
+#         else:
+#             return "Xatolik : manfiy bo'ldi !!! "
+#
+#     return wrappper
+# @is_manf_dec
+# def ret(data):
+#     return data
+#
+# print(ret(-34))
+
+#                               17 - misol
+
+# def ret(func):
+#     def wrapper(a , b):
+#         natija = func(a, b)
+#         with open("natija.txt" , "a") as f:
+#             f.write(str(natija)+"\n")
+#
+#         return natija
+#     return wrapper
+# @ret
+# def hisobla(a , b):
+#     return a + b
+#
+# print(hisobla(1 , 2))
+# print(hisobla(1 , 3))
+# print(hisobla(1 , 4))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
