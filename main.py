@@ -242,23 +242,50 @@
 # print(yigindisi(a))
 # =================================================================
 #                         5 - misol
-# def sana(func):
-#     def wrapper(a,b):
-#         wrapper.counter += 1
-#         return func(a,b)
-#     wrapper.counter = 0
+
+# def necha_marta_ishladi(func):
+#     count = 0
+#     def wrapper(*args):
+#         nonlocal count
+#         count += 1
+#         natija = func(*args)
+#         return f"Funksiya {count} marta ishladi , natija : {natija}"
 #     return wrapper
 #
-# @sana
-# def add(a , b):
-#     return a+b
-# print(add(4 , 5))
-# print(add(4 , 5))
-# print(add(4 , 5))
-# print(add(4 , 5))
 #
-# print(f"Jami : Funksiya {add.counter} marta ishlatildi")
+# def sotrt_dec(func):
+#     def wrapper(list):
+#         new_list = sorted(list)
+#         return func(new_list)
+#     return wrapper
+#
+# list = [23, 43, 54, 56, 2, 3, 5]
+# list1 = [32 , 4]
+# @necha_marta_ishladi
+# @sotrt_dec
+# def funfa(data):
+#     return data
+#
+# print(funfa(list))
+# print(funfa(list1))
 
+
+# def counter(func):
+#     count = 0
+#     def wrapper(*args):
+#         nonlocal count
+#         count += 1
+#         print(f"Funksiya {count} marta chaqirildi")
+#         return func(*args)
+#     return wrapper
+#
+# @counter
+# def salomlash(ism):
+#     return f"Salom, {ism}!"
+#
+# salomlash("Ali")
+# salomlash("Vali")
+# salomlash("Olim")
 # ==================================================================
 #                         6 - misol
 # a = [ 3, 45, 6, 7, 45, 34, 232]
@@ -462,7 +489,7 @@
 # def show(data):
 #     return data
 # print(show(a))
-#===============================================================
+# ==============================================================
 #                      8 - misol
 # a = [3, 45, 65, 3, 2, 32, 9, 44]
 # def sort_dec(func):
@@ -483,7 +510,6 @@
 #     def wrapper(a, b):
 #         start = time.time()
 #         print(func.__name__)
-#         print(func.__doc__)
 #         natija = func(a , b)
 #         end = time.time()
 #         exec_time = end - start
@@ -549,80 +575,3 @@
 # print(hisobla(1 , 3))
 # print(hisobla(1 , 4))
 # =============================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
