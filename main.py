@@ -464,43 +464,39 @@
 #     return data
 # print(show(a))
 
+#                      8 - misol
+# a = [3, 45, 65, 3, 2, 32, 9, 44]
+# def sort_dec(func):
+#     def wrapper(datas):
+#         result = sorted(datas)
+#         return func(result)
+#     return wrapper
+# @sort_dec
+# def returs(data):
+#     return data
+#
+# print(returs(a))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#                          14 - misol
+# import time
+# def func_name_dec(func):
+#     def wrapper(a, b):
+#         start = time.time()
+#         print(func.__name__)
+#         print(func.__doc__)
+#         natija = func(a , b)
+#         end = time.time()
+#         exec_time = end - start
+#         print(f"Funksiya ishlash vaqti : {exec_time}")
+#         return natija
+#     return wrapper
+#
+# @func_name_dec
+# def returs(a , b):
+#     return a * b
+#
+# print(returs(1, 2))
 
 
 
